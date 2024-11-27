@@ -6,7 +6,7 @@ import pandas as pd
 # Load the trained model
 @st.cache_resource
 def load_model():
-    model = joblib.load('random_forest_churn_model.joblib')
+    model = joblib.load('churn_updated_compressed.joblib')
     return model
 
 model = load_model()
