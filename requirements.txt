@@ -1,7 +1,7 @@
-streamlit==1.25.0
-scikit-learn==1.3.0
-numpy==1.24.3
-pandas==1.5.3
-joblib==1.3.0
+streamlit
+scikit-learn
+numpy
+pandas
+joblib
 matpotlib
 seaborn
