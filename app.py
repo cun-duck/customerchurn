@@ -2,11 +2,13 @@ import streamlit as st
 import joblib
 import numpy as np
 import pandas as pd
+import os
 
 # Load the trained model
 @st.cache_resource
 def load_model():
-    model = joblib.load('churn_updated_compressed.joblib')
+    model_path = os.path.join(os.path.dirname(__file__), 'churn_updated_compressed.joblib')
+    model = joblib.load(model_path)
     return model
 
 model = load_model()
